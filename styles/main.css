@@ -1,0 +1,21 @@
+.countdown-number {
+  display: block;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 18px rgb(255 255 255 / 20%);
+}
+
+.countdown-label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.countdown-separator {
+  font-size: clamp(2rem, 7vw, 5rem);
+  line-height: 1;
+}
