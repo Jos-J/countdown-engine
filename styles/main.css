@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .countdown-number {
   display: block;
   font-size: clamp(2.5rem, 8vw, 6rem);
