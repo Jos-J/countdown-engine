@@ -1,5 +1,26 @@
 import type { CountdownTime, CountdownConfig } from "./types";
 
+function updateNumber(
+    element: Element,
+    value: number
+): void {
+
+    const formattedValue =
+        value.toString().padStart(2, "0");
+
+    if (element.textContent === formattedValue) {
+        return;
+    }
+
+    element.textContent = formattedValue;
+
+    element.classList.remove("number-change");
+
+    void element.getBoundingClientRect();
+
+    element.classList.add("number-change");
+}
+
 export function updateCountdownView(
     time: CountdownTime,
     config: CountdownConfig
@@ -26,10 +47,8 @@ export function updateCountdownView(
                 : config.title;
     }
 
-    daysElement.textContent = time.days.toString().padStart(2, "0");
-    hoursElement.textContent = time.hours.toString().padStart(2, "0");
-    minutesElement.textContent = time.minutes.toString().padStart(2, "0");
-    secondsElement.textContent = time.seconds.toString().padStart(2, "0");
-
-
+    updateNumber(daysElement, time.days);
+    updateNumber(hoursElement, time.hours);
+    updateNumber(minutesElement, time.minutes);
+    updateNumber(secondsElement, time.seconds);
 }

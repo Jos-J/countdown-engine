@@ -7,6 +7,8 @@
   line-height: 1;
   letter-spacing: 0.12em;
   text-shadow: 0 0 18px rgb(255 255 255 / 20%);
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
 }
 
 .countdown-label {
@@ -23,6 +25,27 @@
   line-height: 1;
 }
 
-/* footer {
-  background-color: aqua;
-} */
+.number-change {
+  animation: numberChange 250ms ease-out;
+}
+
+@keyframes numberChange {
+  0% {
+    opacity: 0.4;
+    transform: translateY(-6px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: black;
+  color: rgb(255 255 255 / 45%);
+  text-align: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  padding: 1.5rem;
+}
