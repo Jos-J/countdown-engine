@@ -18,10 +18,10 @@ export function calculateCountdown(targetDate: Date): CountdownTime {
 
     const totalSeconds = Math.floor(remainingTime / 1000);
 
-    const days = Math.floor(totalSeconds / 864000);
+    const days = Math.floor(totalSeconds / 86400);
 
     const hours = Math.floor(
-        (totalSeconds % 864000) / 3600
+        (totalSeconds % 86400) / 3600
     );
 
     const minutes = Math.floor(
