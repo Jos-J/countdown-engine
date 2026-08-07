@@ -5,3 +5,9 @@ export interface CountdownTime {
     seconds: number;
     expired: boolean;
 }
+
+export interface CountdownConfig {
+    title: string;
+    expiredMessage: string;
+    targetDate: Date;
+}
