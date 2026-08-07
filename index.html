@@ -9,55 +9,65 @@
   <title> Countdown-Engine </title>
 </head>
 
-<body>
+<body class="min-h-screen bg-black text-white">
 
-  <header>
-  </header>
+  <div class="flex min-h-screen flex-col">
 
-  <main class="relative flex min-h-screen items-center justify-center overflow-hidden bg-black text-white">
-    <div class="relative z-10 text-center">
-      <h1 class="mb-6 text-2xl font-bold uppercase tracking-[0.2em] md:text-4xl">
-        Countdown to College Football
-      </h1>
+    <main class="flex flex-1 items-center justify-center px-4">
+      <section class="w-full max-w-6xl text-center">
 
-      <div class="flex items-start justify-center gap-3 md:gap-8">
-        <div class="countdown-unit">
-          <span id="days" class="countdown-number">00</span>
-          <span class="countdown-label">Days</span>
+        <h1 class="mb-10 text-2xl font-bold uppercase tracking-[0.28em]
+                 sm:text-3xl md:text-4xl">
+          Countdown to College Football
+        </h1>
+
+        <div class="flex flex-wrap items-start justify-center gap-3 md:gap-8">
+
+          <div class="countdown-unit">
+            <span id="days" class="countdown-number">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+
+          <span class="countdown-separator">:</span>
+
+          <div class="countdown-unit">
+            <span id="hours" class="countdown-number">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+
+          <span class="countdown-separator">:</span>
+
+          <div class="countdown-unit">
+            <span id="minutes" class="countdown-number">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+
+          <span class="countdown-separator">:</span>
+
+          <div class="countdown-unit">
+            <span id="seconds" class="countdown-number">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+
         </div>
 
-        <span class="countdown-separator">:</span>
+      </section>
+    </main>
 
-        <div class="countdown-unit">
-          <span id="hours" class="countdown-number">00</span>
-          <span class="countdown-label">Hours</span>
-        </div>
+    <footer class="py-6 text-center text-xs tracking-widest text-white/40">
+      <p>&copy; 2026 Jos J Portfolio. All rights reserved.</p>
+      <a href="https://www.linkedin.com/in/joshuajames" class="transition hover:text-white">
+        LinkedIn
+      </a>
+      <span class="mx-2">|</span>
+      <a href="https://github.com/Jos-J" class="transition hover:text-white">
+        GitHub
+      </a>
+    </footer>
 
-        <span class="countdown-separator">:</span>
-
-        <div class="countdown-unit">
-          <span id="minutes" class="countdown-number">00</span>
-          <span class="countdown-label">Minutes</span>
-        </div>
-
-        <span class="countdown-separator">:</span>
-
-        <div class="countdown-unit">
-          <span id="seconds" class="countdown-number">00</span>
-          <span class="countdown-label">Seconds</span>
-        </div>
-      </div>
-    </div>
-  </main>
+  </div>
 
   <script type="module" src="/src/main.ts"></script>
-
-  <footer class="w3-margin-top">
-    <p>&copy; 2026 Jos J Portfolio. All rights reserved.</p>
-    <a href="https://www.linkedin.com/in/joshuajames">LinkedIn</a> |
-    <a href="https://github.com/Jos-J">GitHub</a>
-  </footer>
-
 </body>
 
 </html>

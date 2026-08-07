@@ -2,9 +2,9 @@ import { calculateCountdown } from "./countdown";
 import { updateCountdownView } from "./countdown-view";
 import type { CountdownConfig } from "./types";
 
-const config = {
+const config: CountdownConfig = {
     title: "Countdown To College Football",
-    expiredMessage: "College Football Has Started",
+    expiredMessage: "College Football Is Here",
     targetDate: new Date("2026-08-29T11:00:00")
 };
 
