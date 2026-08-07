@@ -29,7 +29,6 @@ export function calculateCountdown(targetDate: Date): CountdownTime {
     );
 
     const seconds = totalSeconds % 60;
-
     return {
         days,
         hours,
