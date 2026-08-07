@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
+h1 {
+  text-shadow:
+    0 0 10px rgb(255 255 255 / 12%),
+    0 0 24px rgb(255 255 255 / 8%);
+}
+
+.countdown-unit {
+  flex-shrink: 1;
+  text-align: center;
+  min-width: 0;
+}
 
 .countdown-number {
   display: block;
   font-size: clamp(2.5rem, 8vw, 6rem);
   line-height: 1;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   text-shadow: 0 0 18px rgb(255 255 255 / 20%);
   font-variant-numeric: tabular-nums;
   min-width: 2ch;
@@ -14,9 +25,9 @@
 .countdown-label {
   display: block;
   margin-top: 0.75rem;
-  font-size: 0.7rem;
+  font-size: clamp(0.55rem, 1.5vw, 0.7rem);
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -26,18 +37,18 @@
 }
 
 .number-change {
-  animation: numberChange 250ms ease-out;
+  animation: numberChange 220ms ease-out;
 }
 
 @keyframes numberChange {
   0% {
-    opacity: 0.4;
-    transform: translateY(-6px);
+    opacity: 0.45;
+    transform: translateY(-4px) scale(0.98);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -48,4 +59,10 @@ footer {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   padding: 1.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .number-change {
+        animation: none;
+    }
 }
