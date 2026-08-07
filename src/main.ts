@@ -5,7 +5,7 @@ import type { CountdownConfig } from "./types";
 const config = {
     title: "Countdown To College Football",
     expiredMessage: "College Football Has Started",
-    targetDate: new Date("2026-08-06T23:35:00")
+    targetDate: new Date("2026-08-29T11:00:00")
 };
 
 let intervalID: ReturnType<typeof setInterval>;
