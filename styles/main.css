@@ -62,7 +62,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .number-change {
-        animation: none;
-    }
+  .number-change {
+    animation: none;
+  }
 }
