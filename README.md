@@ -36,11 +36,19 @@ Future integration with HydraHub may include:
 
 | Technology | Purpose |
 |------------|---------|
-| TypeScript | Countdown logic |
-| HTML5 | Page structure |
-| Tailwind | Styling and animations |
-| Vite | Development server and build tool |
-| Git | Version control |
+| ![Typescript](https://img.shields.io/badge/Typescript-grey.svg)| Countdown logic |
+| ![HTML](https://img.shields.io/badge/HTML-grey.svg)| Page structure |
+| ![Tailwind](https://img.shields.io/badge/Tailwind-grey.svg) | Styling and animations |
+| ![Vite](https://img.shields.io/badge/Vite-grey.svg) | Development server and build tool |
+| ![GIT](https://img.shields.io/badge/Git-grey.svg) | Version control |
+
+
+
+
+
+
+
+
 
 ---
 
@@ -111,6 +119,9 @@ Preview the production build.
 npm run preview
 ```
 
+Countdown Engine
+
+- [Live Demo](https://jos-j.github.io/countdown-engine/)
 ---
 
 ## Configuration
@@ -241,7 +252,7 @@ Potential HydraHub applications include:
 
 ## License
 
-![MIT License](https://img.shields.io/badge/License-MIT-darkgreen.svg)
+![MIT License](https://img.shields.io/badge/License-MIT-grey.svg)
 
 ---
 
@@ -250,3 +261,4 @@ Potential HydraHub applications include:
 Created as part of a personal software engineering portfolio and future HydraHub ecosystem.
 
 Built with TypeScript, curiosity, and lots of Matcha.
+
