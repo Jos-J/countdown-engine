@@ -3,9 +3,9 @@ import { updateCountdownView } from "./countdown-view";
 import type { CountdownConfig } from "./types";
 
 const config: CountdownConfig = {
-    title: "Countdown To College Football",
-    expiredMessage: "College Football Is Here",
-    targetDate: new Date("2026-08-29T11:00:00")
+    title: "Countdown To Semester End",
+    expiredMessage: "Semester has ended",
+    targetDate: new Date("2026-10-31T00:00:00")
 };
 
 let intervalID: ReturnType<typeof setInterval>;
